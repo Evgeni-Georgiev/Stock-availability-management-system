@@ -1,0 +1,45 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: retail_chain
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  stock-management-app:
+    build:
+      context: .
+    container_name: stock-app-container
+    ports:
+      - "8080:8080"
+      - "8082:8082" # Expose H2 Console port
+    depends_on:
+      - mysql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/retail_chain
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root_password
+      SPRING_PROFILES_ACTIVE: dev # Set the active Spring profile to 'dev'
+
+  stock-management-app-test:
+    build:
+      context: .
+    container_name: stock-app-test-container
+    ports:
+      - "8081:8081" # Expose a different port for testing (if needed)
+    depends_on:
+      - mysql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+      SPRING_DATASOURCE_USERNAME: sa
+      SPRING_DATASOURCE_PASSWORD: sa
+      SPRING_PROFILES_ACTIVE: test # Set the active Spring profile to 'test'
+    command: [ "mvn", "test" ] # Specify the test command
+
+volumes:
+  mysql-data:

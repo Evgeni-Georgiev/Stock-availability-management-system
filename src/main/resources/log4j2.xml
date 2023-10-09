@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="info">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <!--            Main information up until "=>" is plain and general for configuring. Afterwards the message is based on the logged info from the controller when making CRUD for certain entity.-->
+            <PatternLayout pattern="%d %logger{36} [%t] %-5level %-10c{1.} => %msg %n"/>
+        </Console>
+        <File name="File" fileName="logFile.log">
+            <PatternLayout pattern="%d [%t] %-5level %-50c{1.} - %msg %n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>
