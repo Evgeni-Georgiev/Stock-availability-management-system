@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+.mvn/wrapper
+surefire-reports
+.DS_Store
+logFile.log
+mvnw
+mvnw.cmd
