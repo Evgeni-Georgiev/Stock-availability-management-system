@@ -1,7 +1,7 @@
-package eu.deltasource.training.retailchain.schedule;
+package eu.eugene.training.retailchain.schedule;
 
-import eu.deltasource.training.retailchain.repository.BatchRepository;
-import eu.deltasource.training.retailchain.service.batchService.BatchServiceImpl;
+import eu.eugene.training.retailchain.repository.BatchRepository;
+import eu.eugene.training.retailchain.service.batchService.BatchServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;

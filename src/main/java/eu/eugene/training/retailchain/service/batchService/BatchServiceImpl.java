@@ -1,9 +1,9 @@
-package eu.deltasource.training.retailchain.service.batchService;
+package eu.eugene.training.retailchain.service.batchService;
 
-import eu.deltasource.training.retailchain.entity.Batch;
-import eu.deltasource.training.retailchain.enums.BatchExpirationStatus;
-import eu.deltasource.training.retailchain.enums.DivisionType;
-import eu.deltasource.training.retailchain.exception.*;
+import eu.eugene.training.retailchain.entity.Batch;
+import eu.eugene.training.retailchain.enums.BatchExpirationStatus;
+import eu.eugene.training.retailchain.enums.DivisionType;
+import eu.eugene.training.retailchain.exception.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

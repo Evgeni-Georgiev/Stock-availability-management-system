@@ -1,7 +1,7 @@
-package eu.deltasource.training.retailchain.mapper;
+package eu.eugene.training.retailchain.mapper;
 
-import eu.deltasource.training.retailchain.dto.CountryDTO;
-import eu.deltasource.training.retailchain.entity.Country;
+import eu.eugene.training.retailchain.dto.CountryDTO;
+import eu.eugene.training.retailchain.entity.Country;
 
 /**
  * Provides static methods to map Country and CountryDTO objects to each other.

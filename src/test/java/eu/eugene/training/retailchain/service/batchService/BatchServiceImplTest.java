@@ -1,7 +1,9 @@
-package eu.deltasource.training.retailchain.service.batchService;
+package eu.eugene.training.retailchain.service.batchService;
 
-import eu.deltasource.training.retailchain.entity.Batch;
-import eu.deltasource.training.retailchain.exception.*;
+import eu.eugene.training.retailchain.entity.Batch;
+import eu.eugene.training.retailchain.exception.InvalidDayBeforeExpirationDateException;
+import eu.eugene.training.retailchain.exception.RemainingQuantityNegativeCountException;
+import eu.eugene.training.retailchain.exception.ZeroRemainingItemsInBatchException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;

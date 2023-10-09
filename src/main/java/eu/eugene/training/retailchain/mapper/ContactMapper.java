@@ -1,9 +1,7 @@
-package eu.deltasource.training.retailchain.mapper;
+package eu.eugene.training.retailchain.mapper;
 
-import eu.deltasource.training.retailchain.dto.ContactDTO;
-import eu.deltasource.training.retailchain.entity.Contact;
-
-import static eu.deltasource.training.retailchain.mapper.AddressMapper.*;
+import eu.eugene.training.retailchain.dto.ContactDTO;
+import eu.eugene.training.retailchain.entity.Contact;
 
 
 /**
@@ -23,7 +21,7 @@ public class ContactMapper {
         contact.setEmail(contactDTO.getEmail());
         contact.setMobile(contactDTO.getMobile());
         contact.setPhone(contactDTO.getPhone());
-        contact.setAddress(mapToAddress(contactDTO.getAddress()));
+        contact.setAddress(AddressMapper.mapToAddress(contactDTO.getAddress()));
         return contact;
     }
 
@@ -39,7 +37,7 @@ public class ContactMapper {
         contactDTO.setEmail(contact.getEmail());
         contactDTO.setMobile(contact.getMobile());
         contactDTO.setPhone(contact.getPhone());
-        contactDTO.setAddress(mapToAddressDTO(contact.getAddress()));
+        contactDTO.setAddress(AddressMapper.mapToAddressDTO(contact.getAddress()));
         return contactDTO;
     }
 
@@ -56,6 +54,6 @@ public class ContactMapper {
         contact.setEmail(contactDTO.getEmail());
         contact.setMobile(contactDTO.getMobile());
         contact.setPhone(contactDTO.getPhone());
-        mapToAddress(contactDTO.getAddress(), contact.getAddress());
+        AddressMapper.mapToAddress(contactDTO.getAddress(), contact.getAddress());
     }
 }

@@ -1,19 +1,18 @@
-package eu.deltasource.training.retailchain.service.supplierService;
+package eu.eugene.training.retailchain.service.supplierService;
 
-import eu.deltasource.training.retailchain.entity.Address;
-import eu.deltasource.training.retailchain.entity.Contact;
-import eu.deltasource.training.retailchain.entity.Country;
-import eu.deltasource.training.retailchain.entity.Supplier;
-import eu.deltasource.training.retailchain.repository.SupplierRepository;
-import eu.deltasource.training.retailchain.specification.SupplierSpecification;
+import eu.eugene.training.retailchain.entity.Address;
+import eu.eugene.training.retailchain.entity.Contact;
+import eu.eugene.training.retailchain.entity.Country;
+import eu.eugene.training.retailchain.entity.Supplier;
+import eu.eugene.training.retailchain.repository.SupplierRepository;
+import eu.eugene.training.retailchain.specification.SupplierSpecification;
+import eu.eugene.training.retailchain.mapper.SupplierMapper;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
 
-import static eu.deltasource.training.retailchain.mapper.SupplierMapper.mapToSupplierDTO;
-import static eu.deltasource.training.retailchain.mapper.SupplierMapper.mapToSupplierUpdateDTO;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 public class SupplierServiceImplTest {
@@ -59,7 +58,7 @@ public class SupplierServiceImplTest {
         when(supplierRepository.save(supplier)).thenReturn(supplier);
 
         // Then
-        assertEquals(classUnderTest.create(mapToSupplierDTO(supplier)).getName(), supplier.getName());
+        Assertions.assertEquals(classUnderTest.create(SupplierMapper.mapToSupplierDTO(supplier)).getName(), supplier.getName());
         verify(supplierRepository).save(supplier);
     }
     @Test
@@ -91,7 +90,7 @@ public class SupplierServiceImplTest {
         when(supplierRepository.save(supplier)).thenReturn(supplier);
 
         // Then
-        assertEquals(classUnderTest.update(supplier.getId(), mapToSupplierUpdateDTO(supplier)).getName(), supplier.getName());
+        Assertions.assertEquals(classUnderTest.update(supplier.getId(), SupplierMapper.mapToSupplierUpdateDTO(supplier)).getName(), supplier.getName());
         verify(supplierRepository).save(supplier);
     }
 

@@ -1,6 +1,6 @@
-package eu.deltasource.training.retailchain.exception;
+package eu.eugene.training.retailchain.exception;
 
-import eu.deltasource.training.retailchain.enums.ExceptionMessageTemplate;
+import eu.eugene.training.retailchain.enums.ExceptionMessageTemplate;
 
 public class ZeroRemainingItemsInBatchException extends RuntimeException {
     public ZeroRemainingItemsInBatchException() {

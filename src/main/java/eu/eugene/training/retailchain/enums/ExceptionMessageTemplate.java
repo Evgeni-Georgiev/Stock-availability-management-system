@@ -1,4 +1,4 @@
-package eu.deltasource.training.retailchain.enums;
+package eu.eugene.training.retailchain.enums;
 
 /**
  * Store all default message templates used in Exceptions.

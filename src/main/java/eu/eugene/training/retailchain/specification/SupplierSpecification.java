@@ -1,7 +1,7 @@
-package eu.deltasource.training.retailchain.specification;
+package eu.eugene.training.retailchain.specification;
 
-import eu.deltasource.training.retailchain.entity.Supplier;
-import eu.deltasource.training.retailchain.entity.Supplier_;
+import eu.eugene.training.retailchain.entity.Supplier;
+import eu.eugene.training.retailchain.entity.Supplier_;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Component;
 

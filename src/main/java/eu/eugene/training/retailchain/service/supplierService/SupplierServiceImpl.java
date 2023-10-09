@@ -1,11 +1,11 @@
-package eu.deltasource.training.retailchain.service.supplierService;
+package eu.eugene.training.retailchain.service.supplierService;
 
-import eu.deltasource.training.retailchain.dto.supplier.SupplierDetailsDTO;
-import eu.deltasource.training.retailchain.dto.supplier.SupplierDTO;
-import eu.deltasource.training.retailchain.entity.Supplier;
-import eu.deltasource.training.retailchain.mapper.SupplierMapper;
-import eu.deltasource.training.retailchain.repository.SupplierRepository;
-import eu.deltasource.training.retailchain.specification.SupplierSpecification;
+import eu.eugene.training.retailchain.dto.supplier.SupplierDetailsDTO;
+import eu.eugene.training.retailchain.dto.supplier.SupplierDTO;
+import eu.eugene.training.retailchain.entity.Supplier;
+import eu.eugene.training.retailchain.mapper.SupplierMapper;
+import eu.eugene.training.retailchain.repository.SupplierRepository;
+import eu.eugene.training.retailchain.specification.SupplierSpecification;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.domain.Specification;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static eu.deltasource.training.retailchain.mapper.SupplierMapper.*;
+import static eu.eugene.training.retailchain.mapper.SupplierMapper.*;
 
 /**
  * Concrete implementation service of business logic for Supplier Domain model.

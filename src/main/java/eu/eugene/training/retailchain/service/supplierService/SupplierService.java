@@ -1,7 +1,7 @@
-package eu.deltasource.training.retailchain.service.supplierService;
+package eu.eugene.training.retailchain.service.supplierService;
 
-import eu.deltasource.training.retailchain.dto.supplier.SupplierDetailsDTO;
-import eu.deltasource.training.retailchain.dto.supplier.SupplierDTO;
+import eu.eugene.training.retailchain.dto.supplier.SupplierDetailsDTO;
+import eu.eugene.training.retailchain.dto.supplier.SupplierDTO;
 
 import java.util.List;
 

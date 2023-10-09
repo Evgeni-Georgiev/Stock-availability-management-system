@@ -1,10 +1,10 @@
-package eu.deltasource.training.retailchain.mapper;
+package eu.eugene.training.retailchain.mapper;
 
-import eu.deltasource.training.retailchain.dto.supplier.SupplierDetailsDTO;
-import eu.deltasource.training.retailchain.dto.supplier.SupplierDTO;
-import eu.deltasource.training.retailchain.entity.Supplier;
+import eu.eugene.training.retailchain.dto.supplier.SupplierDetailsDTO;
+import eu.eugene.training.retailchain.dto.supplier.SupplierDTO;
+import eu.eugene.training.retailchain.entity.Supplier;
 
-import static eu.deltasource.training.retailchain.mapper.ContactMapper.*;
+import static eu.eugene.training.retailchain.mapper.ContactMapper.*;
 
 /**
  * Mapper class holding the Conversion from DTO to Entity.

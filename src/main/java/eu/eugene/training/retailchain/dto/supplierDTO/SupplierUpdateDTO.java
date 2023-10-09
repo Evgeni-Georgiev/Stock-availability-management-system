@@ -1,6 +1,6 @@
-package eu.deltasource.training.retailchain.dto.supplierDTO;
+package eu.eugene.training.retailchain.dto.supplierDTO;
 
-import eu.deltasource.training.retailchain.dto.ContactDTO;
+import eu.eugene.training.retailchain.dto.ContactDTO;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;

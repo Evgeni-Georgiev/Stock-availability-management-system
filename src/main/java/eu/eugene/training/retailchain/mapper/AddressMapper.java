@@ -1,9 +1,9 @@
-package eu.deltasource.training.retailchain.mapper;
+package eu.eugene.training.retailchain.mapper;
 
-import eu.deltasource.training.retailchain.dto.AddressDTO;
-import eu.deltasource.training.retailchain.entity.Address;
+import eu.eugene.training.retailchain.dto.AddressDTO;
+import eu.eugene.training.retailchain.entity.Address;
 
-import static eu.deltasource.training.retailchain.mapper.CountryMapper.*;
+import static eu.eugene.training.retailchain.mapper.CountryMapper.*;
 
 
 /**

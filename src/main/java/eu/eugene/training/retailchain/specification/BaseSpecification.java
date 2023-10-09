@@ -1,4 +1,4 @@
-package eu.deltasource.training.retailchain.specification;
+package eu.eugene.training.retailchain.specification;
 
 import jakarta.persistence.criteria.*;
 import org.springframework.data.jpa.domain.Specification;

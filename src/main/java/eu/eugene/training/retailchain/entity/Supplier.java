@@ -1,4 +1,4 @@
-package eu.deltasource.training.retailchain.entity;
+package eu.eugene.training.retailchain.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

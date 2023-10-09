@@ -1,9 +1,9 @@
-package eu.deltasource.training.retailchain.configuration;
+package eu.eugene.training.retailchain.configuration;
 
-import eu.deltasource.training.retailchain.repository.AddressRepository;
-import eu.deltasource.training.retailchain.repository.ContactRepository;
-import eu.deltasource.training.retailchain.repository.CountryRepository;
-import eu.deltasource.training.retailchain.repository.SupplierRepository;
+import eu.eugene.training.retailchain.repository.AddressRepository;
+import eu.eugene.training.retailchain.repository.ContactRepository;
+import eu.eugene.training.retailchain.repository.CountryRepository;
+import eu.eugene.training.retailchain.repository.SupplierRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;

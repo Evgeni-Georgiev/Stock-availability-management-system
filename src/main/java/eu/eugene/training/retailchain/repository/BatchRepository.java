@@ -1,7 +1,6 @@
-package eu.deltasource.training.retailchain.repository;
+package eu.eugene.training.retailchain.repository;
 
-import eu.deltasource.training.retailchain.entity.Batch;
-import eu.deltasource.training.retailchain.enums.BatchExpirationStatus;
+import eu.eugene.training.retailchain.entity.Batch;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;

@@ -1,13 +1,11 @@
-package eu.deltasource.training.retailchain.entity;
+package eu.eugene.training.retailchain.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import eu.deltasource.training.retailchain.enums.BatchExpirationStatus;
+import eu.eugene.training.retailchain.enums.BatchExpirationStatus;
 import jakarta.persistence.*;
 import lombok.Data;
-import org.hibernate.annotations.Type;
 
 import java.time.LocalDate;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * Represents a quantity of specific product that belongs to a specific supplier.

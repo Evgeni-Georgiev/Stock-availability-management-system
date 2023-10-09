@@ -1,8 +1,8 @@
-package eu.deltasource.training.retailchain.controller;
+package eu.eugene.training.retailchain.controller;
 
-import eu.deltasource.training.retailchain.dto.supplier.SupplierDetailsDTO;
-import eu.deltasource.training.retailchain.dto.supplier.SupplierDTO;
-import eu.deltasource.training.retailchain.service.supplierService.SupplierService;
+import eu.eugene.training.retailchain.dto.supplier.SupplierDetailsDTO;
+import eu.eugene.training.retailchain.dto.supplier.SupplierDTO;
+import eu.eugene.training.retailchain.service.supplierService.SupplierService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

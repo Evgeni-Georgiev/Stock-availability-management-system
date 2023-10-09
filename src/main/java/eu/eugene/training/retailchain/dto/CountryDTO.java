@@ -1,4 +1,4 @@
-package eu.deltasource.training.retailchain.dto;
+package eu.eugene.training.retailchain.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

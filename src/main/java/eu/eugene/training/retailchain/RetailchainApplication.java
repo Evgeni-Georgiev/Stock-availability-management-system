@@ -1,4 +1,4 @@
-package eu.deltasource.training.retailchain;
+package eu.eugene.training.retailchain;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.boot.SpringApplication;

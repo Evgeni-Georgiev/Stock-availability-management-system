@@ -1,6 +1,6 @@
-package eu.deltasource.training.retailchain.repository;
+package eu.eugene.training.retailchain.repository;
 
-import eu.deltasource.training.retailchain.entity.Supplier;
+import eu.eugene.training.retailchain.entity.Supplier;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;

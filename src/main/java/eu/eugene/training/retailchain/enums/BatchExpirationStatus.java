@@ -1,4 +1,4 @@
-package eu.deltasource.training.retailchain.enums;
+package eu.eugene.training.retailchain.enums;
 
 public enum BatchExpirationStatus {
     UNEXPIRED("Unexpired"),
