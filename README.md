@@ -1,5 +1,6 @@
-# Stock Availability Management System - Trainee Project
-A trainee project that aims to create a backend application to manage stock availability of a retail chain.
+# Stock Availability Management System
+
+Develop a server application for the management of stock availability of a retail chain.
 
 Entity Relationship diagram:
 
